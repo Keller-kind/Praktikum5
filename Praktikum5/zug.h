@@ -12,13 +12,17 @@ class Zug {
 
 private:
 	vector<Student> m_Studenten;
+	char name;
 	
 
 public:
 	Zug();
+	Zug(char nameIn);
 	void imm(string vorname, string nachname, char geschlecht);
 	bool exm(int a);
 	void printZug();
+	void setName(char a);
+	char getName();
 };
 
 

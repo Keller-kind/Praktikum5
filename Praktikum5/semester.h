@@ -16,8 +16,10 @@ private:
 
 public:
 	Semester();
-	void add_Zug();
-	void remove_Zug();
+	void add_Zug(char a);
+	void remove_Zug(int a);
+	Zug getZug(char a);
+	void printSemester();
 };
 
 

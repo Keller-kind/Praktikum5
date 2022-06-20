@@ -12,7 +12,8 @@
 #include <vector>
 
 using namespace std;
-Zug::Zug(){}
+Zug::Zug() {}
+Zug::Zug(char nameIn) : name(nameIn) {}
 void Zug::imm(string vorname, string nachname, char geschlecht) {
     static int count = 0;
     if (m_Studenten.size() == 5) {
@@ -45,6 +46,16 @@ void Zug::printZug() {
     cout << "Geschlecht: " << m_Studenten[i].getGeschlecht() << endl;
     cout << "Matrikelnummer: " << m_Studenten[i].getMatrikelnummer() << endl;
   }
+}
+
+void Zug::setName(char a)
+{
+    name = a;
+}
+
+char Zug::getName()
+{
+    return name;
 }
 
 #endif /* ZUG_CPP */
